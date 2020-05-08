@@ -1,10 +1,11 @@
 package fragments;
 
 import com.codeborne.selenide.SelenideElement;
+import pages.BasePage;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-public class AgileLoginFragment {
+public class AgileLoginFragment extends BasePage {
 
     private final SelenideElement loginField = $x("//input[@type='text']");
     private final SelenideElement passwordField = $x("//input[@type='password']");
